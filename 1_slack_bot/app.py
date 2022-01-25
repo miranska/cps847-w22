@@ -91,7 +91,7 @@ def message(event, client):
     if text and "echo" in text:
         return echo_cmd(user_id, channel_id, client, text)
     else:
-        return unknown_cmd(user_id, channel_id, client, text)
+        return unknown_cmd(user_id, channel_id, client)
 
 
 if __name__ == "__main__":
